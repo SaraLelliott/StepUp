@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Why Bother</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>http://foundation.zurb.com/docs/components/kitchen_sink.html
+		<link rel="stylesheet" type="text/css" href="./css/foundation.css"/>
+		<script src="js/vendor/modernizr.js"></script>	
+	</head>
+	<body>
+	<!--HEADER-->
+		<div class = "row">
+			<div class= "small-12 large-12 columns">
+				<div id="header"></div>		
+			</div>
+		</div>	
+	<!--Page Navigation and Breadcrumb trail-->
+		<div class="row">
+			<div class="small-3 columns">
+				<nav class="breadcrumbs">
+		  			<a href="index.html">Home</a>
+		  			<a class="unavailable" href="#">Why Bother?</a>
+		  		</nav>
+			</div>
+			<div class="small-9 columns">
+				<div data-magellan-expedition="fixed">
+					<dl class="sub-nav">
+						<dd data-magellan-arrival="whyBother"><a href="#whyBother">Why Bother</a></dd>
+						<dd data-magellan-arrival="health"><a href="#health">Health</a></dd>
+						<dd data-magellan-arrival="social"><a href="#social">Social Problems</a></dd>
+						<dd data-magellan-arrival="remember"><a href="#remember">Things to Remember</a></dd>
+					</dl>
+				</div>	
+			</div>	
+		</div>		
+	<!--SIDE NAV-->	
+		<div class="row">
+			<div class = "small-3 large-3 columns">
+				<div id="sideNav"></div>
+			</div>
+	<!--MAIN CONTENT-->
+			<div class = "small-9 large-9 columns">
+				<a name="whyBother"></a>
+				<h1 data-magellan-destination="whyBother" class="text-center">Why Bother?
+				</h1>
+				
+				<!--information has been sourced from http://www.betterhealth.vic.gov.au/bhcv2/bhcarticles.nsf/pages/Obesity_in_children?open  -->
+
+					<p>The number of overweight children in Australia has doubled in recent years, with a quarter of children considered overweight or obese. Causes of obesity in children include unhealthy food choices, lack of physical activity and family eating habits. </p>
+
+					<p>This rise in the number of overweight children is disturbing because it causes health problems and can lead to social problems. Overweight children are more likely to be teased by their peers or to develop low self-esteem or body image problems. Once children are overweight, it requires a lot of effort and commitment for them to return to a healthy weight. </p>
+
+					<p>Overweight and obesity in children are among the most important risks to children’s long and short-term health. Overweight children are very likely to become overweight adults.</p>	
+
+				<a name="health"></a>					
+					<h2 data-magellan-destination="health">Health problems associated with obesity</h2>
+					<p>Most of the health problems associated with obesity become obvious in adulthood. Early signs of these later problems are commonly found in children. </p>
+					<p class = "potential" id="header">Potential health problems for obese children include:</p>
+							
+					<ol class = "potential" >
+						<li>Type 2 diabetes. While this condition is most commonly seen in adults, it is now also being diagnosed in children</li>
+						<li>Eating disorders such as bulimia or binge eating</li>
+						<li>Orthopaedic disorders. This means problems with foot structure</li>
+						<li>Liver problems, including fatty liver</li>		
+						<li>Respiratory disorders, such as blocked airways and restrictions in the chest wall, which cause breathlessness during exercise</li>
+						<li>Sleep apnoea. This is a condition that causes difficulty breathing when sleeping. It also causes snoring, waking often and poor sleep. It makes people feel tired and contributes to poor concentration during the day</li>
+						<li>Cardiomyopathy. Aproblem with the heart muscle, caused when extra effort is needed to pump blood. </li>
+					</ol>	
+
+				<a name="social"></a>
+					<h2 data-magellan-destination="social">
+						Social problems for obese children and adolescents
+					</h2>
+
+						<p>Obesity can have a major impact on how children feel about themselves and how they interact with others. Obese adolescents are more likely to have low self-esteem, which may impact on other aspects of their lives such as the development of friendships and competency at school. </p>
+
+						<p>Being obese as a child or adolescent increases the risk of a range of diseases and disorders in adulthood, regardless of whether the adult is obese or not. It is important to identify and start to reverse the condition before children become adults. Ideally, overweight and obesity should be prevented.</p>					
+				<a name="help"></a>
+					<h2 data-magellan-destination="help">
+						Where to get help
+					</h2>
+						<ul>
+							<li>Dietitians Association of Australia Tel. 1800 812 942</li>
+							<li>Your doctor</li>
+						 </ul>					
+				<a name="remember"></a>
+					<h2 data-magellan-destination ="remember">
+						Things to remember
+					</h2>
+						<ol>
+							<li>Changing lifestyle and dietary patterns have contributed to increasing obesity rates in children. </li>
+							<li>Lifestyle and diet changes can help children to maintain a healthy weight. </li>
+							<li>Obesity can result in serious health problems in childhood and later life. </li>
+							<li>Children who are obese tend to become obese adults. </li>
+						</ol>
+			</div>	
+		</div>
+		<div class="end"></div>
+
+	<!--FOOTER-->
+		<div class = "row">
+			<div class = "small-9 small-centered columns">
+				<div id="footer"></div>
+			</div>
+		</div>
+	<!--SCRIPTS-->
+   		<script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.magellan.js"></script>
+	 	<script type="text/javascript">
+			$("#header").load("header.html");
+			$('#sideNav').load("sideNav.html");
+			$("#footer").load("footer.html");
+		</script>
+		<script src="js/foundation/foundation.dropdown.js"></script>
+        <script>
+        	$(document).ready(function(){
+				$(document).foundation();
+        	})
+       	</script>
+        
+	</body>
+</html>

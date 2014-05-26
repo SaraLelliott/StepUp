@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Frequently Asked Questions</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/foundation.css"/>
+		<script src="js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+	<!--HEADER-->
+		<div class = "row">
+			<div class= "small-12 large-12 columns">
+				<div id="header"></div>
+			</div>
+		</div>			
+	<!--sideNav section-->		
+		<div class="row">
+			<div class = "small-3 large-3 columns">
+				<div id="sideNav"></div>
+			</div>
+	<!--MAIN CONTENT-->
+			<div class = "small-9 large-9 columns">
+				<h1 class="text-center">Frequently Asked Questions</h1>
+					
+						<h4 class="subheader"> Do I need a login for this website?</h4>
+							<p class="lead"> A login and password is only required if you wish to speak to other parents on our online forums i.e. to discuss recipes, motivational strategies that work of have failed. If you wish to simply access the information within the site a login and password is not required<p/>
+					
+						<h4 class="subheader"> What is the accuracy of the information on this website? </h4>
+							<p class="lead">It is important to note that within this website the administrators have taken information from reputable sites, however no medical or health authority has written this information.</p>
+							<p>This site was not created by healthcare professionals; however the information on this site has been taken from reputable and up to date sites. </p>
+				
+						<h4 class="subheader">Is this site safe and secure for my children?</h4>
+							<p class="lead">We created this site with children and their parents in mind, all information within the 4kids section is aimed at helping children learn how to live a healthy and active life. The way the site is built is to make information easily accessible for your children. </p>
+					
+					<h4 class="subheader">What information will be shared?</h4>
+						<p class="lead"> Your username and comments will be able to be seen by other users all other information i.e. email address and password, will remain private. For more information please see our <a href="./privacyPolicy.html">Privacy Policy</a> </p>		
+			</div>
+		</div>
+
+	
+	<!--FOOTER-->
+		<div class = "row">
+			<div class = "small-9 large-8 small-centered columns">
+				<div id="footer"></div>
+			</div>
+		</div>
+	<!--SCRIPTS-->
+   		<script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+	 	<script type="text/javascript">
+			$("#header").load("header.html");
+			$('#sideNav').load("sideNav.html");
+			$("#footer").load("footer.html");
+		</script>
+		<script src="js/foundation/foundation.dropdown.js"></script>
+        <script>
+        	$(document).ready(function(){
+				$(document).foundation();
+        	})
+       	</script>
+        
+	</body>
+</html>

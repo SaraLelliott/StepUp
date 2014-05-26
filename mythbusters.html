@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mythbusters</title>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/foundation.css"/>	
+</head>
+<body>
+	<!--HEADER-->
+		<div class = "row">
+			<div class= "small-12 large-12 columns">
+				<div id="header"></div>
+			</div>
+		</div>			
+	<!--sideNav section-->		
+		<div class="row">
+			<div class = "small-3 large-3 columns">
+				<div id="sideNav"></div>
+			</div>
+	<!--Main Content-->
+			<div class ="small-9 large-9 columns">
+		<h1>Mythbusters!</h1>
+		<p> There is a lot of conflicting food fad and exercise trends out there at the moment. Never has there been a time where there has been more information available to parents and carers around what foods should be encouraged and what exercise is the best. Not all this information is true - much is anecdotal, sensational and can fall into the realm of 'pseudo-science'.</p>
+		<p> What this section aims to do is to dispel some of the common myths around food and exercise. We will do this by referring to proven and up-to-date scientific research, and links to our sources will be provided so you can do your own further research. Where there is a popular idea but little research - we will reference that too so you have all the information available. We will also include links to other sites that you may find of interest. Here we go! </p>
+
+
+		<!--I would like to put a picture here of the food plate-->
+		<img src="http://kidshealth.org/kid/stay_healthy/food/headers_96629/P_PyramidPlate.png"></p>
+
+		<p>
+			The Food Pyramid vs The Food Plate	
+			Since 2011 there has been a shift from looking at the Food Pyramid as a guide to what we should eat to the Food Plate. the key difference is that fruits and vegetables should form half of a person's diet as opposed to breads and grains. Vegetables should form more than fruit, with grains forming slightly more than protein.
+
+			<a href="http://kidshealth.org/kid/stay_healthy/food/pyramid.html">Kids Health</a>
+		</p>
+			</div>
+		</div>
+	<!--FOOTER-->
+		<div class = "row">
+			<div class = "small-9 large-8 small-centered columns">
+				<div id="footer"></div>
+			</div>
+		</div>
+	<!--SCRIPTS-->
+   		<script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+	 	<script type="text/javascript">
+			$("#header").load("header.html");
+			$('#sideNav').load("sideNav.html");
+			$("#footer").load("footer.html");
+		</script>
+		<script src="js/foundation/foundation.dropdown.js"></script>
+        <script>
+        	$(document).ready(function(){
+				$(document).foundation();
+        	})
+       	</script>
+	</body>
+</html>

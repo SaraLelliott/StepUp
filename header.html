@@ -1,0 +1,121 @@
+<!--TopPicture-->
+<div class = "row">
+	<div class= "small-12 large-12 columns">
+		<img  src="img/headerv3nocolour.png" alt="logo"></img>
+	</div>
+</div>
+			
+<!--Top NAV section-->
+<div class="contain-to-grid">
+	<nav class ="top-bar" data-topbar>
+		<ul class = "title-area">
+			<li class="name"><h1><a href= "index.html">StepUp</a></h1></li>
+			<li class="toggle-topbar menu-icon"><a href="#">MENU</a></li>
+		</ul>
+	<section class="top-bar-section">
+	<!--RIGHT NAV SECTION-->
+		<ul class="right" >
+			<li class="divider"></li>
+			<li> 
+				<!---Edit This to link up with the database-->
+				<a href="signIn.html">
+					Sign In
+				</a> 	
+			</li> 
+			<li class="divider"></li>
+			<li>
+				<a href="#" data-reveal-id="feedbackFormModal">Feedback</a>
+			</li>
+		</ul>
+
+	<!--LEFT NAV SECTION-->
+		<ul class="left">
+			<li class = "has-form">
+				<div class ="row collapse">
+					<div class = "small-8 large-8 columns">
+						<input type="text" placeholder="Search StepUp">
+					</div>
+					<div class="small-4 large-4 columns">
+						<a href="#" class="alert button expand">Search</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	</nav>
+</div>
+
+<div id="feedbackFormModal" class="reveal-modal small" data-reveal>
+	<form id ="feedback" action="submit.html">
+		<fieldset>
+			<legend>Your Details</legend>
+				<ul class="no-bullet">
+					<li>
+						<div class="row">
+							<div class="small-4 large-4 columns">	
+									<label for="nameFirst">First Name:</label>
+							</div>
+							<div class="small-8 large-8 columns">
+									<input id="nameFirst" name="nameFirst" placeholder="First Name" required="" autofocus="" type="text"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="small-4 large-4 columns">	
+								<label for="nameLast">Last Name:</label>
+							</div>
+							<div class="small-8 large-8 columns">
+								<input id="nameLast" name="nameLast" placeholder="Last Name" required="" autofocus="" type="text"/>
+							</div>	
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="small-4 large-4 columns">	
+								<label for="email">Email:</label>
+							</div>
+							<div class="small-8 large-8 columns">
+								<input id="email" name="email" placeholder="blah@example.com.au" required="" autofocus="" type="text"/>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Feedback</legend>
+					<ul class="no-bullet">
+						<li>
+							<label for="category">Category:</label>
+								<select id="category" required="">
+									<option>Information about Health</option>
+									<option>Information about Fitness</option>
+									<option>Site design/Usability</option>
+									<option>Quality of games</option>
+									<option>Validity of Recipes</option>
+									<option>General complaints</option>
+									<option>Other</option>
+								</select>
+						</li>
+						<li>
+							<label for="comments">Comments:</label>
+								<textarea id="comments" placeholder="Enter your feedback "></textarea>
+						</li>
+					</ul>
+			</fieldset>
+			<div class="row">
+				<div class="small-5 large-5 columns small-centered">
+					<input type="submit" data-reveal-id="submitModal" class="button tiny radius round" value="submit" name="buttonSubmit"/>
+<!-- 					<a href="#" data-reveal-id="submitModal" class="button tiny radius round">Submit</a> -->
+ 					<input type = "reset" class="button alert tiny radius round" value="reset" name="buttonReset"/>
+				</div>
+			</div>			
+	</form>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="submitModal" class="reveal-modal tiny" data-reveal>
+	<p> Thankyou for the feedback!</p>
+	<p>We appreciate all comments</p> 
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
